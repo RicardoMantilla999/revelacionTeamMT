@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VotacionService {
-  private apiUrl = 'http://localhost:3000/votacion';
+
+  //private apiUrl = 'http://localhost:3000/votacion';
+  private apiUrl = 'https://backend-revelacion.onrender.com/votacion';
 
 
   constructor(private http: HttpClient) { }
