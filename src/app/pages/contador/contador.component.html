@@ -1,0 +1,9 @@
+<div class="espera-container">
+    <h1 class="espera-titulo">Espera...</h1>
+    <h2 class="contador">{{ contador }}</h2>
+    
+    <!-- Mensaje oculto que aparece con animación -->
+    <p class="mensaje-final" [class.mostrar]="contador === 0">
+        🎊 ¡La espera está por terminar! Si acertaste en la votación, muy pronto recibirás un regalo sorpresa en tu casa. Y si no fue así, no te preocupes, tendrás que esperar un poco más para descubrir si es niño o niña. ¡Gracias por ser parte de esta emocionante aventura! 🎁 🎊
+    </p>
+</div>

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.espera-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #ffdde1, #c2e9fb);
+    font-family: 'Poppins', sans-serif;
+}
+
+.espera-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff80ab;
+}
+
+.contador {
+    font-size: 60px;
+    font-weight: bold;
+    color: #7bb7f7;
+    animation: zoom 1s infinite alternate;
+}
+
+/* Oculta el mensaje al inicio */
+.mensaje-final {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Efecto de explosión cuando aparece */
+.mensaje-final.mostrar {
+    opacity: 1;
+    transform: scale(1);
+    animation: explosion 1s ease-out;
+}
+
+/* Animaciones */
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes explosion {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}

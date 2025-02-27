@@ -1,0 +1,18 @@
+<div class="votacion-container">
+    <h1 class="titulo">
+        <span class="letra celeste">H</span><span class="letra rosado">o</span><span class="letra celeste">l</span><span
+            class="letra rosado">a <br></span>
+        <span class="parentesco">{{ parentesco }}</span> <span class="nombre"> {{ nombre }}</span>
+    </h1>
+    <p class="pregunta">¿Qué crees que seré?</p>
+
+    <!-- Mostrar pantalla de carga -->
+    <div class="loading-container" *ngIf="cargando">
+        <img src="assets/biberon.png" class="biberon-icon" alt="Cargando...">
+      </div>
+
+    <div *ngIf="!cargando" class="botones">
+        <button class="btn niño" (click)="enviarVoto('Niño')">👶🏻 Niño</button>
+        <button class="btn niña" (click)="enviarVoto('Niña')">🎀 Niña</button>
+    </div>
+</div>

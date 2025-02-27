@@ -1,0 +1,46 @@
+<div class="invitation-container">
+  <div class="invitation-card">
+    <h1 class="title">
+      <span class="pink">¡</span><span class="blue">B</span><span class="pink">i</span><span class="blue">e</span><span
+        class="pink">n</span><span class="blue">v</span><span class="pink">e</span><span class="blue">n</span><span
+        class="pink">i</span><span class="blue">d</span><span class="pink">o <br></span>
+      <span class="blue">a </span>
+      <span class="pink">m</span><span class="blue">i<br></span>
+      <span class="pink">R</span><span class="blue">e</span><span class="pink">v</span><span class="blue">e</span><span
+        class="pink">l</span><span class="blue">a</span><span class="pink">c</span><span class="blue">i</span><span
+        class="pink">ó</span><span class="blue">n </span>
+      <span class="pink">d</span><span class="blue">e <br></span>
+      <span class="pink">G</span><span class="blue">é</span><span class="pink">n</span><span class="blue">e</span><span
+        class="pink">r</span><span class="blue">o</span><span class="pink">!</span>
+    </h1>
+    <p class="subtitle">¿Será niño o niña? ¡Haz tu elección!</p>
+
+    <form (ngSubmit)="continuar()" class="form">
+      <mat-form-field appearance="outline" class="custom-field">
+        <mat-label>Tu Nombre</mat-label>
+        <input matInput [(ngModel)]="nombre" name="nombre" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="custom-field">
+        <mat-label>Parentesco</mat-label>
+        <mat-select [(ngModel)]="parentesco" name="parentesco" required>
+          <mat-option value="Abuelita">Abuela</mat-option>
+          <mat-option value="Abuelito">Abuelo</mat-option>
+          <mat-option value="Tío">Tío</mat-option>
+          <mat-option value="Tía">Tía</mat-option>
+          <mat-option value="Primo">Primo</mat-option>
+          <mat-option value="Prima">Prima</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="submit-btn">
+        🎉 Continuar 🎉
+      </button>
+    </form>
+
+    <div class="decorations">
+      <span class="balloon pink"></span>
+      <span class="balloon blue"></span>
+    </div>
+  </div>
+</div>
