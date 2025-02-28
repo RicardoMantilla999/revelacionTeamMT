@@ -13,7 +13,7 @@
       <span class="pink">G</span><span class="blue">é</span><span class="pink">n</span><span class="blue">e</span><span
         class="pink">r</span><span class="blue">o</span><span class="pink">!</span>
     </h1>
-    <p class="subtitle">¿Será niño o niña?</p>
+    <p class="subtitle">¿Seré niño o niña?</p>
 
     <form (ngSubmit)="continuar()" class="form">
       <mat-form-field appearance="outline" class="custom-field">
@@ -26,10 +26,12 @@
         <mat-select [(ngModel)]="parentesco" name="parentesco" required>
           <mat-option value="Abuelita">Abuela</mat-option>
           <mat-option value="Abuelito">Abuelo</mat-option>
-          <mat-option value="Tío">Tío</mat-option>
           <mat-option value="Tía">Tía</mat-option>
-          <mat-option value="Primo">Primo</mat-option>
+          <mat-option value="Tío">Tío</mat-option>
           <mat-option value="Prima">Prima</mat-option>
+          <mat-option value="Primo">Primo</mat-option>
+          <mat-option value="Amiga">Amiga</mat-option>
+          <mat-option value="Amigo">Amigo</mat-option>
         </mat-select>
       </mat-form-field>
 
